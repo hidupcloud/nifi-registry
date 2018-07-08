@@ -1,0 +1,10 @@
+version: "3"
+services:
+  nifi-registry:
+    image: hidup/nifi-registry:0.2.0
+    ports:
+      - 18080:18080
+    volumes:
+      - ./opt/nifi-registry:/opt/nifi-registry
+    environment:
+      TZ: "Europe/Madrid"
